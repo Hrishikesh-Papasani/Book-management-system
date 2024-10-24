@@ -1,0 +1,37 @@
+<!-- Original HTML template for form -->
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Form Page</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <h1>Please fill the form below</h1>
+    <p><a href="/display">Go to Display Page</a></p> 
+
+    <form action="/result" method="POST">
+        <label for="userName">Enter your name: </label>
+        <input type="text" id="userName" name="userName" placeholder="Your name" required>
+        <br>
+
+        <label for="bookName">Enter book name: </label>
+        <input type="text" id="bookName" name="bookName" placeholder="Book name" required>
+        <br>
+
+        <label for="authorName">Enter author name: </label>
+        <input type="text" id="authorName" name="authorName" placeholder="Author name" required>
+        <br>
+
+        <label for="category">Enter book category: </label>
+        <input type="text" id="category" name="category" placeholder="e.g. Fiction, Non-fiction" required>
+        <br>
+
+        <label for="description">Enter a short description: </label>
+        <textarea id="description" name="description" placeholder="Brief description about the book"></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

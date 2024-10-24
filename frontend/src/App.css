@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e2e8f0); /* Light gradient background */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff; /* White background for content */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+
+h1 {
+  text-align: center;
+  color: #222; /* Darker color for heading */
+  font-size: 2.5rem; /* Larger font size */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styles for the form container */
+.form-container {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4a4a4a; /* Medium gray for text */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #cbd5e1; /* Light border for inputs */
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4f46e5; /* Deep blue on focus */
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5); /* Glow effect */
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition on hover */
+}
+
+button[type="submit"] {
+  background: linear-gradient(90deg, #4f46e5, #6ee7b7); /* Gradient background */
+  color: white;
+}
+
+button[type="button"] {
+  background: linear-gradient(90deg, #f43f5e, #ff61a6); /* Coral gradient */
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-2px); /* Slight lift effect */
+  opacity: 0.9; /* Slight fade on hover */
+}
+
+/* Styles for submitted data */
+.submitted-data {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #4f46e5; /* Border color */
+  border-radius: 6px;
+  background-color: #e0f2fe; /* Light blue background */
+  color: #333; /* Dark text color */
+  font-weight: bold;
+}

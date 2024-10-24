@@ -1,0 +1,20 @@
+<!-- Original HTML template to display submitted data -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result Page</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>    
+
+<body>
+    <h1>Thank you for submitting!</h1>
+
+    <p><strong>Your Name:</strong> {{ user_name }}</p>
+    <p><strong>Book Name:</strong> {{ book_name }}</p>
+    <p><strong>Author Name:</strong> {{ author_name }}</p>
+    <p><strong>Category:</strong> {{ category }}</p>
+    <p><strong>Description:</strong> {{ description }}</p>
+
+    <p><a href="/display">View All Submissions</a></p>
+</body>
+</html>

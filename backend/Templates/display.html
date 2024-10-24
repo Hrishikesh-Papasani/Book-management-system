@@ -1,0 +1,43 @@
+<!-- Original HTML template to display all the records in books table -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Books</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>Submitted Favorite Books</h1>
+
+    <!-- Check if there are any books to display -->
+    <!-- JINJA2 template -> variable substitution and conditional rendering -->
+    {% if books %}
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User Name</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through each book in the 'books' object -->
+            {% for book in books %}
+            <tr>
+                <td>{{ book[0] }}</td>  <!-- ID -->
+                <td>{{ book[1] }}</td>  <!-- User Name -->
+                <td>{{ book[2] }}</td>  <!-- Book Name -->
+                <td>{{ book[3] }}</td>  <!-- Author Name -->
+                <td>{{ book[4] }}</td>  <!-- Category -->
+                <td>{{ book[5] }}</td>  <!-- Description -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No books have been submitted yet.</p>
+    {% endif %}
+</body>
+</html>
